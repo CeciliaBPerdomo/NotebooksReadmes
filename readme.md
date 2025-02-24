@@ -181,27 +181,16 @@ print(math.sqrt(36))  # Output: 6.0
 💡 **Recuerda**: Al igual que en Jupyter o Colab, las celdas comparten memoria, por lo que puedes definir una variable en una celda y usarla en otra.
 
 ## ⚡ Diferencias Clave entre VS Code Notebooks y Google Colab
-Característica
-VS Code Notebooks 🖥
-Google Colab ☁️
-Ubicación
-Computadora local
-Nube de Google
-Recursos
-Sin límites, depende de tu PC
-Limitados
-Conexión a Internet
-No es necesaria
-Necesaria
-Acceso a GPU
-Si tienes GPU, puedes usarla con CUDA
-Depende de disponibilidad
-Tiempo de Ejecución
-Ilimitado
-Puede desconectarse
+| Característica       | VS Code Notebooks 🖥       | Google Colab ☁️          |
+|----------------------|----------------------------|--------------------------|
+| Ubicación            | Computadora local          | Nube de Google           |
+| Recursos             | Sin límites, depende de tu PC | Limitados               |
+| Conexión a Internet  | No es necesaria            | Necesaria                |
+| Acceso a GPU         | Si tienes GPU, puedes usarla con CUDA | Depende de disponibilidad |
+| Tiempo de Ejecución  | Ilimitado                  | Puede desconectarse      |
 
 
-🎯 Conclusión
+## 🎯 Conclusión
 📌 VS Code Notebooks te da más control sobre tus recursos y no tiene las limitaciones de la nube. Si trabajas en proyectos grandes o necesitas más potencia, es una mejor opción que Google Colab.
 ✅ Recomendación: Si vas a trabajar con notebooks a largo plazo, instala VS Code y Jupyter en tu computadora para evitar las restricciones de Google Colab. 🚀
 
