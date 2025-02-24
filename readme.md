@@ -191,6 +191,7 @@ print(math.sqrt(36))  # Output: 6.0
 
 
 ## 🎯 Conclusión
-📌 VS Code Notebooks te da más control sobre tus recursos y no tiene las limitaciones de la nube. Si trabajas en proyectos grandes o necesitas más potencia, es una mejor opción que Google Colab.
-✅ Recomendación: Si vas a trabajar con notebooks a largo plazo, instala VS Code y Jupyter en tu computadora para evitar las restricciones de Google Colab. 🚀
+📌 **VS Code Notebooks te da más control sobre tus recursos y no tiene las limitaciones de la nube**. Si trabajas en proyectos grandes o necesitas más potencia, es una mejor opción que Google Colab.
+
+✅ **Recomendación**: Si vas a trabajar con notebooks a largo plazo, instala **VS Code y Jupyter** en tu computadora para evitar las restricciones de Google Colab. 🚀
 
