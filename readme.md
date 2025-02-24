@@ -27,8 +27,11 @@ Si intentamos usar algo antes de ejecutarlo, obtendremos un error.
 print(math.sqrt(25))  # ERROR: math no está importado aún
 ``` 
 
-### 🔺 Solución: Primero ejecutamos la celda donde importamos `math`, luego ejecutamos la celda con `print(math.sqrt(25))`.
-### 💡 Regla Clave: El código que ejecutas en una celda queda disponible en todo el notebook, pero solo después de ejecutarlo.
+### 🔺 Solución
+Primero ejecutamos la celda donde importamos `math`, luego ejecutamos la celda con `print(math.sqrt(25))`.
+
+### 💡 Regla Clave
+El código que ejecutas en una celda queda disponible en todo el notebook, pero solo después de ejecutarlo.
 
 🛠 Ejercicio Paso a Paso
 Sigue estos pasos para comprender mejor cómo funciona el notebook:
