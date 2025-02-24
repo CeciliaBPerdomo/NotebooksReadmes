@@ -72,8 +72,9 @@ Sin embargo, **Colab tiene recursos limitados**, lo que significa que:
 
 ## 🔴 Limitaciones de Google Colab
 1️⃣ RAM y CPU Limitadas
-En la versión gratuita, obtienes alrededor de 12 GB de RAM y una CPU virtual moderada.
-Si consumes demasiada memoria, el notebook se puede reiniciar y perderás todo lo que no hayas guardado.
+- En la versión gratuita, obtienes alrededor de 12 GB de RAM y una CPU virtual moderada.
+- Si consumes demasiada memoria, el notebook se puede reiniciar y perderás todo lo que no hayas guardado.
+
 2️⃣ Tiempo de Ejecución Máximo
 Las sesiones en Google Colab no son permanentes.
 Si dejas de usar el notebook por un tiempo o ejecutas procesos largos, Google puede cerrarlo automáticamente.
