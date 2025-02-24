@@ -104,18 +104,19 @@ drive.mount('/content/drive')
 🔹 Trabajar en Tu Propia Computadora
 Si necesitas más recursos o tiempo ilimitado, considera instalar Jupyter Notebook o usar un entorno local como **Anaconda**.
 📌 Pasos para instalar Jupyter Notebook en tu PC:
-    1️⃣ Descarga e instala Anaconda desde https://www.anaconda.com/.
-    2️⃣ Abre Anaconda y ejecuta:
+- 1️⃣ Descarga e instala Anaconda desde https://www.anaconda.com/.
+- 2️⃣ Abre Anaconda y ejecuta:
     ``` python
     jupyter notebook
     ```
 
-3️⃣ Se abrirá tu navegador con un entorno similar a Google Colab, pero usando los recursos de tu PC.
-🔹 Google Colab Pro (Opcional, pero de Pago)
-Si necesitas más RAM o acceso garantizado a GPUs, Google ofrece Colab Pro (de pago), que te da mejores recursos y más tiempo de ejecución.
+- 3️⃣ Se abrirá tu navegador con un entorno similar a Google Colab, pero usando los **recursos de tu PC**.
+
+🔹 **Google Colab Pro** (Opcional, pero de Pago)
+Si necesitas más RAM o acceso garantizado a GPUs, Google ofrece **Colab Pro** (de pago), que te da mejores recursos y más tiempo de ejecución.
 
 ## 🔥 Conclusión
-💡 Google Colab es excelente para pruebas rápidas y proyectos pequeños, pero si necesitas más poder de cómputo, lo mejor es trabajar en tu propia computadora o en servidores más potentes. 🚀
+**💡 Google Colab es excelente para pruebas rápidas y proyectos pequeños, pero si necesitas más poder de cómputo, lo mejor es trabajar en tu propia computadora o en servidores más potentes. 🚀**
 
 
 # 📝 VS Code Notebooks: Programación Interactiva en tu Computadora
