@@ -167,15 +167,20 @@ pip install jupyter
 4️⃣ Escribe código en una celda y ejecútalo con el botón ▶️ o presionando Shift + Enter.
 
 🖥 Ejemplo Básico en VS Code Notebooks
+
 🔹 Celda 1: Importar Librerías
+``` python
 import math
+```
 
 🔹 Celda 2: Usar la librería importada
+``` python
 print(math.sqrt(36))  # Output: 6.0
+```
 
-💡 Recuerda: Al igual que en Jupyter o Colab, las celdas comparten memoria, por lo que puedes definir una variable en una celda y usarla en otra.
+💡 **Recuerda**: Al igual que en Jupyter o Colab, las celdas comparten memoria, por lo que puedes definir una variable en una celda y usarla en otra.
 
-⚡ Diferencias Clave entre VS Code Notebooks y Google Colab
+## ⚡ Diferencias Clave entre VS Code Notebooks y Google Colab
 Característica
 VS Code Notebooks 🖥
 Google Colab ☁️
