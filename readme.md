@@ -35,6 +35,7 @@ El código que ejecutas en una celda queda disponible en todo el notebook, pero 
 
 ## 🛠 Ejercicio Paso a Paso
 Sigue estos pasos para comprender mejor cómo funciona el notebook:
+
 1️⃣ En la primera celda, importa la librería `random`:
 ``` python
 import random
@@ -59,13 +60,14 @@ print("Número aleatorio:", numero)
 
 # 🎓 Google Colab: Recursos Limitados y Alternativas
 ## 📌 ¿Qué es Google Colab?
-Google Colab (o Google Colaboratory) es un entorno de notebooks en la nube que te permite ejecutar código en Python sin necesidad de instalar nada en tu computadora. Es ideal para aprender, experimentar y realizar proyectos pequeños o medianos con acceso gratuito a GPUs y TPUs.
-Sin embargo, Colab tiene recursos limitados, lo que significa que:
+Google Colab (o Google Colaboratory) es un entorno de notebooks en la nube que te permite ejecutar código en Python sin necesidad de instalar nada en tu computadora. Es ideal para aprender, experimentar y realizar proyectos pequeños o medianos con **acceso gratuito a GPUs y TPUs**.
+
+Sin embargo, **Colab tiene recursos limitados**, lo que significa que:
 ✔ No puedes usar todo el poder de una supercomputadora.
 ✔ El tiempo de ejecución de las máquinas es limitado.
 ✔ Puede desconectarte automáticamente si estás inactivo o consumes demasiada memoria.
 
-🔴 Limitaciones de Google Colab
+## 🔴 Limitaciones de Google Colab
 1️⃣ RAM y CPU Limitadas
 En la versión gratuita, obtienes alrededor de 12 GB de RAM y una CPU virtual moderada.
 Si consumes demasiada memoria, el notebook se puede reiniciar y perderás todo lo que no hayas guardado.
