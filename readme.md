@@ -106,7 +106,9 @@ drive.mount('/content/drive')
 Si necesitas más recursos o tiempo ilimitado, considera instalar Jupyter Notebook o usar un entorno local como **Anaconda**.
 
 📌 Pasos para instalar Jupyter Notebook en tu PC:
+
    1️⃣ Descarga e instala Anaconda desde https://www.anaconda.com/.
+   
    2️⃣ Abre Anaconda y ejecuta:
     ``` python
     jupyter notebook
