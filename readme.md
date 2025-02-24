@@ -138,23 +138,32 @@ Un **VS Code Notebook** es un tipo especial de archivo (`.ipynb`) que permite ej
 - Se integra con extensiones de Python y Jupyter en VS Code.
 
 ## 🛠 Cómo Usar Notebooks en VS Code
-🔹 1. Instalación de los Requisitos
+
+### 🔹 1. Instalación de los Requisitos
 Para usar notebooks en VS Code, necesitas instalar algunas herramientas:
+
 1️⃣ Instalar VS Code
-Descárgalo desde https://code.visualstudio.com/
+- Descárgalo desde https://code.visualstudio.com/
+
 2️⃣ Instalar la Extensión de Python
-Abre VS Code
-Ve a la pestaña Extensiones (Ctrl + Shift + X)
-Busca Python e instálala.
+- Abre VS Code
+- Ve a la pestaña Extensiones (Ctrl + Shift + X)
+- Busca Python e instálala.
+
 3️⃣ Instalar Jupyter en Python
-Si no lo tienes instalado, abre una terminal en VS Code y ejecuta:
+- Si no lo tienes instalado, abre una terminal en VS Code y ejecuta:
+``` python
 pip install jupyter
+```
 
+### 🔹 2. Creando un Notebook en VS Code
 
-🔹 2. Creando un Notebook en VS Code
 1️⃣ Abre VS Code.
+
 2️⃣ Ve a Archivo > Nuevo Archivo y guarda el archivo con extensión .ipynb.
+
 3️⃣ Verás un entorno similar a Jupyter con celdas de código.
+
 4️⃣ Escribe código en una celda y ejecútalo con el botón ▶️ o presionando Shift + Enter.
 
 🖥 Ejemplo Básico en VS Code Notebooks
