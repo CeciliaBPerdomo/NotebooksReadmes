@@ -48,6 +48,7 @@ print("Número aleatorio:", numero)
 ```
 
 3️⃣ Ejecuta la segunda celda sin haber ejecutado la primera. ¿Qué pasa?
+
 4️⃣ Ahora ejecuta la primera celda y luego vuelve a ejecutar la segunda.
 
 ### ✅ Conclusión:
@@ -114,6 +115,7 @@ Si necesitas más recursos o tiempo ilimitado, considera instalar Jupyter Notebo
    3️⃣ Se abrirá tu navegador con un entorno similar a Google Colab, pero usando los **recursos de tu PC**.
 
 🔹 **Google Colab Pro** (Opcional, pero de Pago)
+
 Si necesitas más RAM o acceso garantizado a GPUs, Google ofrece **Colab Pro** (de pago), que te da mejores recursos y más tiempo de ejecución.
 
 ## 🔥 Conclusión
