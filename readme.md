@@ -2,19 +2,26 @@
 ## 📌 ¿Qué es un Notebook y Cómo Funciona?
 Un **notebook** (como Jupyter Notebook o Google Colab) es un entorno interactivo donde puedes escribir y ejecutar código en **celdas**.
 
-A diferencia de los archivos de código tradicionales (`.py` en Python, por ejemplo), donde todo el código se ejecuta de arriba hacia abajo en un solo archivo, en un notebook puedes ejecutar diferentes partes del código en distintos momentos y en cualquier orden.
+A diferencia de los archivos de código tradicionales (`.py` en Python, por ejemplo), donde todo el código se ejecuta de arriba hacia abajo en un solo archivo, en un notebook **puedes ejecutar diferentes partes del código en distintos momentos y en cualquier orden**.
 
 Sin embargo, todas las celdas comparten la misma **memoria** y el mismo **estado**.
 
 ## 🔹 Importaciones y Variables en Notebooks
-Cuando ejecutas una celda en un notebook, el código dentro de esa celda se ejecuta y se guarda en la memoria. Esto significa que si defines una variable o importas una librería en una celda, podrás usarla en otra celda sin necesidad de repetir la importación o definición.
+Cuando ejecutas una celda en un notebook, el código dentro de esa celda **se ejecuta y se guarda en la memoria**. Esto significa que si defines una variable o importas una librería en una celda, podrás usarla en otra celda sin necesidad de repetir la importación o definición.
 
-✍ Ejemplo de Importaciones
-En una celda, podemos importar una librería como math:
+### ✍ Ejemplo de Importaciones
+En una celda, podemos importar una librería como `math`:
+``` 
+```python
 import math  # Importamos la librería math
+```
+``` 
 
-Luego, en otra celda diferente, podemos usar math.sqrt(), aunque no hayamos vuelto a escribir import math:
+Luego, en otra celda diferente, podemos usar `math.sqrt()`, aunque no hayamos vuelto a escribir `import math`:
+``` 
 print(math.sqrt(25))  # Funciona porque math ya está importado en la memoria
+``` 
+
 
 ❌ Error Común: Ejecutar Celdas en el Orden Incorrecto
 Si intentamos usar algo antes de ejecutarlo, obtendremos un error.
