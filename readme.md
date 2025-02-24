@@ -11,14 +11,12 @@ Cuando ejecutas una celda en un notebook, el código dentro de esa celda **se ej
 
 ### ✍ Ejemplo de Importaciones
 En una celda, podemos importar una librería como `math`:
-``` 
-```python
+``` python
 import math  # Importamos la librería math
-```
 ``` 
 
 Luego, en otra celda diferente, podemos usar `math.sqrt()`, aunque no hayamos vuelto a escribir `import math`:
-``` 
+``` python
 print(math.sqrt(25))  # Funciona porque math ya está importado en la memoria
 ``` 
 
