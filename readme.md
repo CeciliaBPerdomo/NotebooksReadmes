@@ -1,197 +1,196 @@
-# 📒 Notebooks: Un Solo Ambiente de Trabajo
-## 📌 ¿Qué es un Notebook y Cómo Funciona?
-Un **notebook** (como Jupyter Notebook o Google Colab) es un entorno interactivo donde puedes escribir y ejecutar código en **celdas**.
+# 📒 Notebooks: A Single Workspace
+## 📌 What is a Notebook and How Does It Work?
+A **notebook** (like Jupyter Notebook or Google Colab) is an interactive environment where you can write and execute code in **cells**.
 
-A diferencia de los archivos de código tradicionales (`.py` en Python, por ejemplo), donde todo el código se ejecuta de arriba hacia abajo en un solo archivo, en un notebook **puedes ejecutar diferentes partes del código en distintos momentos y en cualquier orden**.
+Unlike traditional code files (`.py` in Python, for example), where all the code runs from top to bottom in a single file, in a notebook **you can run different parts of the code at different times and in any order**.
 
-Sin embargo, todas las celdas comparten la misma **memoria** y el mismo **estado**.
+However, all cells share the same **memory** and the same **state**.
 
-## 🔹 Importaciones y Variables en Notebooks
-Cuando ejecutas una celda en un notebook, el código dentro de esa celda **se ejecuta y se guarda en la memoria**. Esto significa que si defines una variable o importas una librería en una celda, podrás usarla en otra celda sin necesidad de repetir la importación o definición.
+## 🔹 Imports and Variables in Notebooks
+When you run a cell in a notebook, the code inside that cell **executes and is stored in memory**. This means that if you define a variable or import a library in one cell, you can use it in another cell without needing to repeat the import or definition.
 
-### ✍ Ejemplo de Importaciones
-En una celda, podemos importar una librería como `math`:
+### ✍ Example of Imports
+In one cell, we can import a library like `math`:
 ``` python
-import math  # Importamos la librería math
+import math  # We import the math library
 ``` 
 
-Luego, en otra celda diferente, podemos usar `math.sqrt()`, aunque no hayamos vuelto a escribir `import math`:
+Then, in a different cell, we can use `math.sqrt()`, even if we haven't rewritten `import math`:
 ``` python
-print(math.sqrt(25))  # Funciona porque math ya está importado en la memoria
+print(math.sqrt(25))  # Works because math is already imported in memory
 ``` 
 
-## ❌ Error Común: Ejecutar Celdas en el Orden Incorrecto
-Si intentamos usar algo antes de ejecutarlo, obtendremos un error.
-### 🔻 Error típico:
+## ❌ Common Error: Running Cells in the Wrong Order
+If we try to use something before running it, we will get an error.
+### 🔻 Typical Error:
 ``` python
-print(math.sqrt(25))  # ERROR: math no está importado aún
+print(math.sqrt(25))  # ERROR: math is not imported yet
 ``` 
 
-### 🔺 Solución
-Primero ejecutamos la celda donde importamos `math`, luego ejecutamos la celda con `print(math.sqrt(25))`.
+### 🔺 Solution
+First, run the cell where we import `math`, then run the cell with `print(math.sqrt(25))`.
 
-### 💡 Regla Clave
-El código que ejecutas en una celda queda disponible en todo el notebook, pero solo después de ejecutarlo.
+### 💡 Key Rule
+The code you run in a cell becomes available throughout the notebook, but only after you run it.
 
-## 🛠 Ejercicio Paso a Paso
-Sigue estos pasos para comprender mejor cómo funciona el notebook:
+## 🛠 Step-by-Step Exercise
+Follow these steps to better understand how the notebook works:
 
-1️⃣ En la primera celda, importa la librería `random`:
+1️⃣ In the first cell, import the `random` library:
 ``` python
 import random
 ``` 
 
-2️⃣ En la segunda celda, genera un número aleatorio usando `random.randint(1, 10)`:
+2️⃣ In the second cell, generate a random number using `random.randint(1, 10)`:
 ``` python
-numero = random.randint(1, 10)
-print("Número aleatorio:", numero)
+number = random.randint(1, 10)
+print("Random number:", number)
 ```
 
-3️⃣ Ejecuta la segunda celda sin haber ejecutado la primera. ¿Qué pasa?
+3️⃣ Run the second cell without running the first one. What happens?
 
-4️⃣ Ahora ejecuta la primera celda y luego vuelve a ejecutar la segunda.
+4️⃣ Now run the first cell and then run the second one again.
 
-### ✅ Conclusión:
-- Si ejecutas una celda con una importación o una variable, esta queda guardada en la memoria del notebook.
-- Puedes usar lo que definiste en cualquier otra celda, siempre y cuando hayas ejecutado la celda que lo definía primero.
-- Si cierras el notebook o reinicias el kernel, perderás todo lo que estaba en la memoria y tendrás que volver a ejecutar las celdas necesarias.
+### ✅ Conclusion:
+- If you run a cell with an import or a variable, it is stored in the notebook's memory.
+- You can use what you defined in any other cell, as long as you have run the cell that defined it first.
+- If you close the notebook or restart the kernel, you will lose everything that was in memory and will have to run the necessary cells again.
 
-**📌 Resumen Final: Un notebook es un solo ambiente de trabajo donde todas las celdas comparten memoria, pero debes ejecutarlas en el orden correcto para que funcionen correctamente. 🚀**
+**📌 Final Summary: A notebook is a single workspace where all cells share memory, but you must run them in the correct order for them to work properly. 🚀**
 
 
-# 🎓 Google Colab: Recursos Limitados y Alternativas
-## 📌 ¿Qué es Google Colab?
-Google Colab (o Google Colaboratory) es un entorno de notebooks en la nube que te permite ejecutar código en Python sin necesidad de instalar nada en tu computadora. Es ideal para aprender, experimentar y realizar proyectos pequeños o medianos con **acceso gratuito a GPUs y TPUs**.
+# 🎓 Google Colab: Limited Resources and Alternatives
+## 📌 What is Google Colab?
+Google Colab (or Google Colaboratory) is a cloud-based notebook environment that allows you to run Python code without installing anything on your computer. It is ideal for learning, experimenting, and doing small to medium projects with **free access to GPUs and TPUs**.
 
-Sin embargo, **Colab tiene recursos limitados**, lo que significa que:
+However, **Colab has limited resources**, which means that:
 
-✔ No puedes usar todo el poder de una supercomputadora.
+✔ You cannot use the full power of a supercomputer.
 
-✔ El tiempo de ejecución de las máquinas es limitado.
+✔ The runtime of the machines is limited.
 
-✔ Puede desconectarte automáticamente si estás inactivo o consumes demasiada memoria.
+✔ It can automatically disconnect you if you are inactive or consume too much memory.
 
-## 🔴 Limitaciones de Google Colab
-1️⃣ RAM y CPU Limitadas
-- En la versión gratuita, obtienes alrededor de 12 GB de RAM y una CPU virtual moderada.
-- Si consumes demasiada memoria, el notebook se puede reiniciar y perderás todo lo que no hayas guardado.
+## 🔴 Limitations of Google Colab
+1️⃣ Limited RAM and CPU
+- In the free version, you get around 12 GB of RAM and a moderate virtual CPU.
+- If you consume too much memory, the notebook can restart and you will lose everything that was not saved.
 
-2️⃣ Tiempo de Ejecución Máximo
-- Las sesiones en Google Colab no son permanentes.
-- Si dejas de usar el notebook por un tiempo o ejecutas procesos largos, Google puede cerrarlo automáticamente.
+2️⃣ Maximum Runtime
+- Sessions in Google Colab are not permanent.
+- If you stop using the notebook for a while or run long processes, Google can automatically close it.
 
-3️⃣ Acceso Restringido a GPU y TPU
-- Puedes usar una GPU para acelerar cálculos con TensorFlow o PyTorch, pero no es garantizado que siempre tengas acceso.
-- Si muchas personas están usando Colab al mismo tiempo, podrías no obtener una GPU disponible.
+3️⃣ Restricted Access to GPU and TPU
+- You can use a GPU to speed up calculations with TensorFlow or PyTorch, but it is not guaranteed that you will always have access.
+- If many people are using Colab at the same time, you might not get an available GPU.
 
-Para ver si tienes GPU activada, usa este comando en una celda:
+To see if you have GPU enabled, use this command in a cell:
 
 ``` python
 !nvidia-smi
 ```
 
-4️⃣ Pérdida de Datos si Reinicias el Entorno
-- Si el entorno se desconecta o se reinicia, todo lo que estaba en la memoria (variables, modelos, archivos temporales) **se pierde**.
-- Para evitar esto, **guarda tus archivos importantes en Google Drive o descárgalos a tu máquina**.
+4️⃣ Data Loss if the Environment is Restarted
+- If the environment disconnects or restarts, everything that was in memory (variables, models, temporary files) **is lost**.
+- To avoid this, **save your important files to Google Drive or download them to your machine**.
 
-## ✅ Soluciones y Alternativas
-🔹 Guardar Archivos en Google Drive
-Para evitar perder archivos cuando se reinicia Colab, puedes conectarlo a tu Google Drive:
+## ✅ Solutions and Alternatives
+🔹 Save Files to Google Drive
+To avoid losing files when Colab restarts, you can connect it to your Google Drive:
 ``` python
 from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-🔹 Trabajar en Tu Propia Computadora
-Si necesitas más recursos o tiempo ilimitado, considera instalar Jupyter Notebook o usar un entorno local como **Anaconda**.
+🔹 Work on Your Own Computer
+If you need more resources or unlimited time, consider installing Jupyter Notebook or using a local environment like **Anaconda**.
 
-📌 Pasos para instalar Jupyter Notebook en tu PC:
+📌 Steps to install Jupyter Notebook on your PC:
 
-   1️⃣ Descarga e instala Anaconda desde https://www.anaconda.com/.
+    1️⃣ Download and install Anaconda from https://www.anaconda.com/.
 
-   2️⃣ Abre Anaconda y ejecuta:
+    2️⃣ Open Anaconda and run:
 
 ``` python
 jupyter notebook
 ```
 
-   3️⃣ Se abrirá tu navegador con un entorno similar a Google Colab, pero usando los **recursos de tu PC**.
+    3️⃣ Your browser will open with an environment similar to Google Colab, but using your **PC's resources**.
 
-🔹 **Google Colab Pro** (Opcional, pero de Pago)
+🔹 **Google Colab Pro** (Optional, but Paid)
 
-Si necesitas más RAM o acceso garantizado a GPUs, Google ofrece **Colab Pro** (de pago), que te da mejores recursos y más tiempo de ejecución.
+If you need more RAM or guaranteed access to GPUs, Google offers **Colab Pro** (paid), which gives you better resources and more runtime.
 
-## 🔥 Conclusión
-**💡 Google Colab es excelente para pruebas rápidas y proyectos pequeños, pero si necesitas más poder de cómputo, lo mejor es trabajar en tu propia computadora o en servidores más potentes. 🚀**
+## 🔥 Conclusion
+**💡 Google Colab is excellent for quick tests and small projects, but if you need more computing power, it is best to work on your own computer or on more powerful servers. 🚀**
 
 
 
-# 📝 VS Code Notebooks: Programación Interactiva en tu Computadora
+# 📝 VS Code Notebooks: Interactive Programming on Your Computer
 
-## 📌 ¿Qué es un Notebook en VS Code?
-Un **VS Code Notebook** es un tipo especial de archivo (`.ipynb`) que permite ejecutar código en **celdas**, similar a Jupyter Notebook o Google Colab. La diferencia principal es que **todo se ejecuta en tu propia computadora**, lo que significa que tienes control total sobre los recursos y el tiempo de ejecución.
+## 📌 What is a Notebook in VS Code?
+A **VS Code Notebook** is a special type of file (`.ipynb`) that allows you to run code in **cells**, similar to Jupyter Notebook or Google Colab. The main difference is that **everything runs on your own computer**, which means you have full control over resources and runtime.
 
-✅ Ventajas de usar notebooks en VS Code:
-- Puedes ejecutar código en celdas individuales sin correr todo el script.
-- No dependes de internet ni de Google Colab.
-- Puedes usar todo el poder de tu computadora (más RAM, CPU, y GPU si tienes una).
-- Se integra con extensiones de Python y Jupyter en VS Code.
+✅ Advantages of using notebooks in VS Code:
+- You can run code in individual cells without running the entire script.
+- You do not depend on the internet or Google Colab.
+- You can use all the power of your computer (more RAM, CPU, and GPU if you have one).
+- It integrates with Python and Jupyter extensions in VS Code.
 
-## 🛠 Cómo Usar Notebooks en VS Code
+## 🛠 How to Use Notebooks in VS Code
 
-### 🔹 1. Instalación de los Requisitos
-Para usar notebooks en VS Code, necesitas instalar algunas herramientas:
+### 🔹 1. Installation Requirements
+To use notebooks in VS Code, you need to install some tools:
 
-1️⃣ Instalar VS Code
-- Descárgalo desde https://code.visualstudio.com/
+1️⃣ Install VS Code
+- Download it from https://code.visualstudio.com/
 
-2️⃣ Instalar la Extensión de Python
-- Abre VS Code
-- Ve a la pestaña Extensiones (Ctrl + Shift + X)
-- Busca Python e instálala.
+2️⃣ Install the Python Extension
+- Open VS Code
+- Go to the Extensions tab (Ctrl + Shift + X)
+- Search for Python and install it.
 
-3️⃣ Instalar Jupyter en Python
-- Si no lo tienes instalado, abre una terminal en VS Code y ejecuta:
+3️⃣ Install Jupyter in Python
+- If you do not have it installed, open a terminal in VS Code and run:
 ``` python
 pip install jupyter
 ```
 
-### 🔹 2. Creando un Notebook en VS Code
+### 🔹 2. Creating a Notebook in VS Code
 
-1️⃣ Abre VS Code.
+1️⃣ Open VS Code.
 
-2️⃣ Ve a Archivo > Nuevo Archivo y guarda el archivo con extensión .ipynb.
+2️⃣ Go to File > New File and save the file with the .ipynb extension.
 
-3️⃣ Verás un entorno similar a Jupyter con celdas de código.
+3️⃣ You will see an environment similar to Jupyter with code cells.
 
-4️⃣ Escribe código en una celda y ejecútalo con el botón ▶️ o presionando Shift + Enter.
+4️⃣ Write code in a cell and run it with the ▶️ button or by pressing Shift + Enter.
 
-🖥 Ejemplo Básico en VS Code Notebooks
+🖥 Basic Example in VS Code Notebooks
 
-🔹 Celda 1: Importar Librerías
+🔹 Cell 1: Import Libraries
 ``` python
 import math
 ```
 
-🔹 Celda 2: Usar la librería importada
+🔹 Cell 2: Use the imported library
 ``` python
 print(math.sqrt(36))  # Output: 6.0
 ```
 
-💡 **Recuerda**: Al igual que en Jupyter o Colab, las celdas comparten memoria, por lo que puedes definir una variable en una celda y usarla en otra.
+💡 **Remember**: Just like in Jupyter or Colab, cells share memory, so you can define a variable in one cell and use it in another.
 
-## ⚡ Diferencias Clave entre VS Code Notebooks y Google Colab
-| Característica       | VS Code Notebooks 🖥       | Google Colab ☁️          |
-|----------------------|----------------------------|--------------------------|
-| Ubicación            | Computadora local          | Nube de Google           |
-| Recursos             | Sin límites, depende de tu PC | Limitados               |
-| Conexión a Internet  | No es necesaria            | Necesaria                |
-| Acceso a GPU         | Si tienes GPU, puedes usarla con CUDA | Depende de disponibilidad |
-| Tiempo de Ejecución  | Ilimitado                  | Puede desconectarse      |
+## ⚡ Key Differences between VS Code Notebooks and Google Colab
+| Feature             | VS Code Notebooks 🖥       | Google Colab ☁️          |
+|---------------------|----------------------------|--------------------------|
+| Location            | Local computer             | Google cloud             |
+| Resources           | Unlimited, depends on your PC | Limited                 |
+| Internet Connection | Not necessary              | Necessary                |
+| GPU Access          | If you have a GPU, you can use it with CUDA | Depends on availability |
+| Runtime             | Unlimited                  | Can disconnect           |
 
 
-## 🎯 Conclusión
-📌 **VS Code Notebooks te da más control sobre tus recursos y no tiene las limitaciones de la nube**. Si trabajas en proyectos grandes o necesitas más potencia, es una mejor opción que Google Colab.
+## 🎯 Conclusion
+📌 **VS Code Notebooks give you more control over your resources and do not have the limitations of the cloud**. If you work on large projects or need more power, it is a better option than Google Colab.
 
-✅ **Recomendación**: Si vas a trabajar con notebooks a largo plazo, instala **VS Code y Jupyter** en tu computadora para evitar las restricciones de Google Colab. 🚀
-
+✅ **Recommendation**: If you are going to work with notebooks in the long term, install **VS Code and Jupyter** on your computer to avoid the restrictions of Google Colab. 🚀
