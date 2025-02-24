@@ -40,22 +40,24 @@ Sigue estos pasos para comprender mejor cómo funciona el notebook:
 import random
 ``` 
 
-- 2️⃣ En la segunda celda, genera un número aleatorio usando random.randint(1, 10):
+- 2️⃣ En la segunda celda, genera un número aleatorio usando `random.randint(1, 10)`:
+``` python
 numero = random.randint(1, 10)
 print("Número aleatorio:", numero)
+```
 
 - 3️⃣ Ejecuta la segunda celda sin haber ejecutado la primera. ¿Qué pasa?
 - 4️⃣ Ahora ejecuta la primera celda y luego vuelve a ejecutar la segunda.
 
 ### ✅ Conclusión:
-Si ejecutas una celda con una importación o una variable, esta queda guardada en la memoria del notebook.
-Puedes usar lo que definiste en cualquier otra celda, siempre y cuando hayas ejecutado la celda que lo definía primero.
-Si cierras el notebook o reinicias el kernel, perderás todo lo que estaba en la memoria y tendrás que volver a ejecutar las celdas necesarias.
-📌 Resumen Final: Un notebook es un solo ambiente de trabajo donde todas las celdas comparten memoria, pero debes ejecutarlas en el orden correcto para que funcionen correctamente. 🚀
+- Si ejecutas una celda con una importación o una variable, esta queda guardada en la memoria del notebook.
+- Puedes usar lo que definiste en cualquier otra celda, siempre y cuando hayas ejecutado la celda que lo definía primero.
+- Si cierras el notebook o reinicias el kernel, perderás todo lo que estaba en la memoria y tendrás que volver a ejecutar las celdas necesarias.
+**📌 Resumen Final: Un notebook es un solo ambiente de trabajo donde todas las celdas comparten memoria, pero debes ejecutarlas en el orden correcto para que funcionen correctamente. 🚀**
 
 
-🎓 Google Colab: Recursos Limitados y Alternativas
-📌 ¿Qué es Google Colab?
+# 🎓 Google Colab: Recursos Limitados y Alternativas
+## 📌 ¿Qué es Google Colab?
 Google Colab (o Google Colaboratory) es un entorno de notebooks en la nube que te permite ejecutar código en Python sin necesidad de instalar nada en tu computadora. Es ideal para aprender, experimentar y realizar proyectos pequeños o medianos con acceso gratuito a GPUs y TPUs.
 Sin embargo, Colab tiene recursos limitados, lo que significa que:
 ✔ No puedes usar todo el poder de una supercomputadora.
