@@ -63,8 +63,11 @@ print("Número aleatorio:", numero)
 Google Colab (o Google Colaboratory) es un entorno de notebooks en la nube que te permite ejecutar código en Python sin necesidad de instalar nada en tu computadora. Es ideal para aprender, experimentar y realizar proyectos pequeños o medianos con **acceso gratuito a GPUs y TPUs**.
 
 Sin embargo, **Colab tiene recursos limitados**, lo que significa que:
+
 ✔ No puedes usar todo el poder de una supercomputadora.
+
 ✔ El tiempo de ejecución de las máquinas es limitado.
+
 ✔ Puede desconectarte automáticamente si estás inactivo o consumes demasiada memoria.
 
 ## 🔴 Limitaciones de Google Colab
