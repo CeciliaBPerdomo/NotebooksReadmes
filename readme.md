@@ -76,22 +76,24 @@ Sin embargo, **Colab tiene recursos limitados**, lo que significa que:
 - Si consumes demasiada memoria, el notebook se puede reiniciar y perderás todo lo que no hayas guardado.
 
 2️⃣ Tiempo de Ejecución Máximo
-Las sesiones en Google Colab no son permanentes.
-Si dejas de usar el notebook por un tiempo o ejecutas procesos largos, Google puede cerrarlo automáticamente.
+- Las sesiones en Google Colab no son permanentes.
+- Si dejas de usar el notebook por un tiempo o ejecutas procesos largos, Google puede cerrarlo automáticamente.
+
 3️⃣ Acceso Restringido a GPU y TPU
-Puedes usar una GPU para acelerar cálculos con TensorFlow o PyTorch, pero no es garantizado que siempre tengas acceso.
-Si muchas personas están usando Colab al mismo tiempo, podrías no obtener una GPU disponible.
+- Puedes usar una GPU para acelerar cálculos con TensorFlow o PyTorch, pero no es garantizado que siempre tengas acceso.
+- Si muchas personas están usando Colab al mismo tiempo, podrías no obtener una GPU disponible.
+
 Para ver si tienes GPU activada, usa este comando en una celda:
 
-
+``` python
 !nvidia-smi
-
+```
 
 4️⃣ Pérdida de Datos si Reinicias el Entorno
-Si el entorno se desconecta o se reinicia, todo lo que estaba en la memoria (variables, modelos, archivos temporales) se pierde.
-Para evitar esto, guarda tus archivos importantes en Google Drive o descárgalos a tu máquina.
+- Si el entorno se desconecta o se reinicia, todo lo que estaba en la memoria (variables, modelos, archivos temporales) **se pierde**.
+- Para evitar esto, **guarda tus archivos importantes en Google Drive o descárgalos a tu máquina**.
 
-✅ Soluciones y Alternativas
+## ✅ Soluciones y Alternativas
 🔹 Guardar Archivos en Google Drive
 Para evitar perder archivos cuando se reinicia Colab, puedes conectarlo a tu Google Drive:
 from google.colab import drive
