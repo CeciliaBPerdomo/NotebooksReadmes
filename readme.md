@@ -127,15 +127,17 @@ Si necesitas más RAM o acceso garantizado a GPUs, Google ofrece **Colab Pro** (
 
 
 # 📝 VS Code Notebooks: Programación Interactiva en tu Computadora
-## 📌 ¿Qué es un Notebook en VS Code?
-Un VS Code Notebook es un tipo especial de archivo (.ipynb) que permite ejecutar código en celdas, similar a Jupyter Notebook o Google Colab. La diferencia principal es que todo se ejecuta en tu propia computadora, lo que significa que tienes control total sobre los recursos y el tiempo de ejecución.
-✅ Ventajas de usar notebooks en VS Code:
-Puedes ejecutar código en celdas individuales sin correr todo el script.
-No dependes de internet ni de Google Colab.
-Puedes usar todo el poder de tu computadora (más RAM, CPU, y GPU si tienes una).
-Se integra con extensiones de Python y Jupyter en VS Code.
 
-🛠 Cómo Usar Notebooks en VS Code
+## 📌 ¿Qué es un Notebook en VS Code?
+Un **VS Code Notebook** es un tipo especial de archivo (`.ipynb`) que permite ejecutar código en **celdas**, similar a Jupyter Notebook o Google Colab. La diferencia principal es que **todo se ejecuta en tu propia computadora**, lo que significa que tienes control total sobre los recursos y el tiempo de ejecución.
+
+✅ Ventajas de usar notebooks en VS Code:
+- Puedes ejecutar código en celdas individuales sin correr todo el script.
+- No dependes de internet ni de Google Colab.
+- Puedes usar todo el poder de tu computadora (más RAM, CPU, y GPU si tienes una).
+- Se integra con extensiones de Python y Jupyter en VS Code.
+
+## 🛠 Cómo Usar Notebooks en VS Code
 🔹 1. Instalación de los Requisitos
 Para usar notebooks en VS Code, necesitas instalar algunas herramientas:
 1️⃣ Instalar VS Code
