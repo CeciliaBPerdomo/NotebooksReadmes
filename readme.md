@@ -96,24 +96,30 @@ Para ver si tienes GPU activada, usa este comando en una celda:
 ## ✅ Soluciones y Alternativas
 🔹 Guardar Archivos en Google Drive
 Para evitar perder archivos cuando se reinicia Colab, puedes conectarlo a tu Google Drive:
+``` python
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
 🔹 Trabajar en Tu Propia Computadora
-Si necesitas más recursos o tiempo ilimitado, considera instalar Jupyter Notebook o usar un entorno local como Anaconda.
+Si necesitas más recursos o tiempo ilimitado, considera instalar Jupyter Notebook o usar un entorno local como **Anaconda**.
 📌 Pasos para instalar Jupyter Notebook en tu PC:
-1️⃣ Descarga e instala Anaconda desde https://www.anaconda.com/.
-2️⃣ Abre Anaconda y ejecuta:
-jupyter notebook
+    1️⃣ Descarga e instala Anaconda desde https://www.anaconda.com/.
+    2️⃣ Abre Anaconda y ejecuta:
+    ``` python
+    jupyter notebook
+    ```
 
 3️⃣ Se abrirá tu navegador con un entorno similar a Google Colab, pero usando los recursos de tu PC.
 🔹 Google Colab Pro (Opcional, pero de Pago)
 Si necesitas más RAM o acceso garantizado a GPUs, Google ofrece Colab Pro (de pago), que te da mejores recursos y más tiempo de ejecución.
 
-🔥 Conclusión
+## 🔥 Conclusión
 💡 Google Colab es excelente para pruebas rápidas y proyectos pequeños, pero si necesitas más poder de cómputo, lo mejor es trabajar en tu propia computadora o en servidores más potentes. 🚀
-📝 VS Code Notebooks: Programación Interactiva en tu Computadora
-📌 ¿Qué es un Notebook en VS Code?
+
+
+# 📝 VS Code Notebooks: Programación Interactiva en tu Computadora
+## 📌 ¿Qué es un Notebook en VS Code?
 Un VS Code Notebook es un tipo especial de archivo (.ipynb) que permite ejecutar código en celdas, similar a Jupyter Notebook o Google Colab. La diferencia principal es que todo se ejecuta en tu propia computadora, lo que significa que tienes control total sobre los recursos y el tiempo de ejecución.
 ✅ Ventajas de usar notebooks en VS Code:
 Puedes ejecutar código en celdas individuales sin correr todo el script.
